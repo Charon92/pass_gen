@@ -15,7 +15,6 @@ Download one of the binaries and call it:
 |`pass_gen 5 --numbers --upper`| `TranquilSituationShiftStampLay7719941`|
 |`pass_gen 5`|`oiljokescribbleassumptionduce`|
 |`pass_gen 8 --numbers --upper`|`RinseCriticizeContextGoodWhineHighwayPreferPhoto1140204`
-|`pass_gen 12 --numbers`|`monthfinancemissquoteemploymentdivulgeGallopingquietskateboardparticularCelestialvalue2011137`|
 
 Or alternatively, clone the repo and build it:
 
