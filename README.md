@@ -1,5 +1,7 @@
 # PassGen
 
+![example workflow](https://github.com/Charon92/pass_gen/actions/workflows/rust.yml/badge.svg)
+
 A super simple password generator in Rust.
 
 I realise this is pretty messy and not really optimised. There are giant arrays of the values that could probably be in external files but, it worked and didn't require anything fancy and produces a relatively small binary.
