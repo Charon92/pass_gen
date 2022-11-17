@@ -6,7 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+ansi_term = "0.12.1"
 clap = { version = "4.0", features = ["derive"] }
+cli-table = "0.4.7"
 inflector-plus = "0.11.7"
 rand = "0.8.5"
 

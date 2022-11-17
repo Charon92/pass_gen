@@ -1,4 +1,6 @@
+use ansi_term::{self, Colour};
 use clap::Parser;
+use cli_table::{format::Justify, Cell, Style, Table};
 use inflector::Inflector;
 use rand::seq::SliceRandom;
 use rand::Rng;
@@ -38,5 +40,12 @@ fn generate(words: u8, numbers: bool, upper: bool) -> String {
 fn main() {
     let args = Cli::parse();
     let password = generate(args.words, args.numbers, args.upper);
-    println!("{password}");
+    let table = vec![
+        vec!["Password: ".cell(), Colour::Green.paint(password).cell().justify(Justify::Right)]
+    ].table()
+    .title(vec![
+        "PassGen".cell().bold(true),
+        "".cell()
+    ]);
+    println!("{}", table.display().unwrap());
 }
